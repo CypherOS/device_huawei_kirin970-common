@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8' standalone='yes' ?>
 <!--
      Copyright (C) 2018 The LineageOS Project
+     Copyright (C) 2018 CypherOS
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,5 +19,6 @@
 <carrier_config_list>
     <carrier_config>
         <boolean name="hide_signal_strength_in_sim_status_bool" value="true" />
+        <boolean name="world_phone_bool" value="true" />
     </carrier_config>
 </carrier_config_list>
