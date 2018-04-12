@@ -1,2 +1,5 @@
 sys.vndk.ldconfig    u:object_r:vndk_detect_prop:s0
 huawei.check_root.   u:object_r:check_root_prop:s0
+
+# Allow system server to change fingerprint nav properties
+sys.fpnav.enabled           u:object_r:sys_fpnav_enabled_prop:s0
