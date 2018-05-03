@@ -61,7 +61,7 @@ TARGET_USES_HWC2 := true
 TARGET_INIT_VENDOR_LIB := libinit_kirin970
 TARGET_RECOVERY_DEVICE_MODULES := libinit_kirin970
 
-# Lineage hardware
+# Device hardware
 JAVA_SOURCE_OVERLAYS := \
     hardware.aoscp.controllers|$(VENDOR_PATH)/devicehw|**/*.java
 
@@ -100,3 +100,7 @@ ifneq ($(TARGET_DEVICE),charlotte)
  BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
  BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 endif
+
+# Shims
+TARGET_LD_SHIM_LIBS := \
+    /system/lib64/libdisplayengineservice.so|/system/lib64/libshims_displayengineservice.so
