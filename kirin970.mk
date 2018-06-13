@@ -88,7 +88,7 @@ PRODUCT_PACKAGES += \
 
 # Release tools
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:install/bin/releasetools.kirin970.sh
+    $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.kirin970.sh
 
 # Selinux
 PRODUCT_COPY_FILES += \
