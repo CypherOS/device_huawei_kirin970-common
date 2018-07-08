@@ -25,4 +25,7 @@
     <!-- Whether the device requires overlays to be in /system/overlay -->
     <bool name="config_hasSystemOverlayPath">true</bool>
 
+    <!-- Full screen aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
+
 </resources>
