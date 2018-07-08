@@ -70,6 +70,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Radio
 PRODUCT_PACKAGES += \
     qti-telephony-common
+	
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
