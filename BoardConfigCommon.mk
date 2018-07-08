@@ -41,7 +41,7 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
 # Extended Filesystem Support
-TARGET_EXFAT_DRIVER := exfat
+TARGET_KERNEL_HAVE_EXFAT := true
 
 # System themes
 TARGET_RRO_OUT_SYSTEM := true
