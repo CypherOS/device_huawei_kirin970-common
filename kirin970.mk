@@ -69,7 +69,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.huawei=8.0.0 \
     ro.build.version.release=$(PLATFORM_VERSION) \
     ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
-    ro.cust.cdrom=/dev/null
+    ro.cust.cdrom=/dev/null \
+	ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
+	ro.vendor.override.build_display=$(BUILD_ID)
 
 # Radio
 PRODUCT_PACKAGES += \
