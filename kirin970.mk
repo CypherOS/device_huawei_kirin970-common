@@ -79,6 +79,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
+	
+# Offline charging
+PRODUCT_PACKAGES += \
+    charger_res_images
 
 # Recovery
 PRODUCT_PACKAGES += \
