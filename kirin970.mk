@@ -79,10 +79,17 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
-	
+
 # Offline charging
 PRODUCT_PACKAGES += \
     charger_res_images
+    
+# AOSCP Biomectrics
+PRODUCT_PACKAGES += \
+    biomectrics-ext
+
+PRODUCT_BOOT_JARS += \
+    hardware-aoscp
 
 # Recovery
 PRODUCT_PACKAGES += \
