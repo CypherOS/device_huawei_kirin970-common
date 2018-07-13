@@ -80,6 +80,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 	
+# Hardware aoscp
+PRODUCT_PACKAGES += \
+    aoscp-biomectrics-huawei
+
 # Offline charging
 PRODUCT_PACKAGES += \
     charger_res_images
