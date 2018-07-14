@@ -61,4 +61,10 @@
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors -->
     <bool name="config_multiColorBatteryLed">true</bool>
 
+	<!-- Descriptor: Path to the vendors biometrics hal, required to send commands.
+         TransactionId: The transaction id required to send to the biometrics hal.
+    -->
+    <string name="config_vendorBiometricsDescriptor" translatable="false">vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint</string>
+    <integer name="config_vendorBiometricsTransactionId">20</integer>
+
 </resources>
