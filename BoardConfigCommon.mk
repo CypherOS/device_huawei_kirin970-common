@@ -37,7 +37,6 @@ TARGET_NO_KERNEL := false
 TARGET_PREBUILT_KERNEL := /dev/null
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(VENDOR_PATH)/bluetooth
 BOARD_HAVE_BLUETOOTH := true
 
 # Extended Filesystem Support
