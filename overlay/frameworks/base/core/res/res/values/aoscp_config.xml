@@ -67,4 +67,14 @@
     <string name="config_vendorBiometricsDescriptor" translatable="false">vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint</string>
     <integer name="config_vendorBiometricsTransactionId">20</integer>
 
+	<!-- Default clock position
+         0 = Right
+         1 = Center
+         2 = Left
+    -->
+    <integer name="config_defaultClockPosition">2</integer>
+	
+	<!-- Whether the device has a notch -->
+    <bool name="config_deviceHasNotchDisplay">true</bool>
+
 </resources>
