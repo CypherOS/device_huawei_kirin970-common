@@ -49,6 +49,16 @@ TARGET_RRO_OUT_SYSTEM := true
 # Partitions
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3707764736
 
+# Enable dex-preoptimization to speed up first boot sequence
+ifeq ($(HOST_OS),linux)
+  ifneq ($(TARGET_BUILD_VARIANT),eng)
+    ifeq ($(WITH_DEXPREOPT),)
+      WITH_DEXPREOPT_BOOT_IMG_AND_SYSTEM_SERVER_ONLY := false
+      WITH_DEXPREOPT := true
+    endif
+  endif
+endif
+
 # Properties
 TARGET_SYSTEM_PROP := $(VENDOR_PATH)/system.prop
 
