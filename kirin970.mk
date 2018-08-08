@@ -74,8 +74,11 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.vendor.override.build_display=$(BUILD_ID)
 
 # Radio
+#PRODUCT_PACKAGES += \
+    #qti-telephony-common
+	
 PRODUCT_PACKAGES += \
-    qti-telephony-common
+    telephony-ext
 
 PRODUCT_BOOT_JARS += \
     telephony-ext
