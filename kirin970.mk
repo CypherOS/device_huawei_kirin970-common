@@ -72,13 +72,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cust.cdrom=/dev/null \
     ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
     ro.vendor.override.build_display=$(BUILD_ID)
-
-# Radio
-PRODUCT_PACKAGES += \
-    qti-telephony-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
 	
 # Offline charging
 PRODUCT_PACKAGES += \
