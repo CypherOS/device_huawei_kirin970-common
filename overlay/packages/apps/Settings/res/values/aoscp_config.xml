@@ -16,6 +16,6 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Is the device's fingerprint sensor located on the bottom front? Used
-         for fingerprint enrollment illustration -->
-    <bool name="config_hasBottomFingerprintSensor">true</bool>
+         for fingerprint enrollment illustration
+    <bool name="config_hasBottomFingerprintSensor">true</bool>-->
 </resources>
