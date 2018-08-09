@@ -69,16 +69,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.huawei=8.0.0 \
     ro.build.version.release=$(PLATFORM_VERSION) \
     ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
-    ro.cust.cdrom=/dev/null \
-    ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
-    ro.vendor.override.build_display=$(BUILD_ID)
-
-# Radio
-PRODUCT_PACKAGES += \
-    qti-telephony-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+    ro.cust.cdrom=/dev/null
 	
 # Offline charging
 PRODUCT_PACKAGES += \
@@ -91,10 +82,6 @@ PRODUCT_PACKAGES += \
 # Release tools
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:install/bin/releasetools.kirin970.sh
-
-# Remove unwanted packages
-PRODUCT_PACKAGES += \
-    RemovePackages
 
 # Shims
 PRODUCT_PACKAGES += \
