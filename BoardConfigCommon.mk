@@ -61,6 +61,9 @@ TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.kirin970
 # Release tools
 TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)/releasetools
 
+# Disable basic dexpreopt
+WITH_DEXPREOPT := false
+
 # SELinux
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
