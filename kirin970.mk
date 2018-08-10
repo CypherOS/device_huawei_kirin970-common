@@ -100,6 +100,3 @@ PRODUCT_PACKAGES += \
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.compat.txt:system/etc/ld.config.compat.txt
-
-PRODUCT_PACKAGES += \
-    vndk-sp
