@@ -92,6 +92,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:install/bin/releasetools.kirin970.sh
 
+# Selinux
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sepolicy/27.0.cil:$(TARGET_COPY_OUT_SYSTEM)/etc/selinux/mapping/27.0.cil
+
 # Shims
 PRODUCT_PACKAGES += \
     libshims_hisupl \
