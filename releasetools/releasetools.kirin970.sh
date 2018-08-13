@@ -27,6 +27,8 @@ sed -i "/group reserved_disk/d" /system/etc/init/vold.rc
 sed -i "s/group incidentd/group/" /system/etc/init/incidentd.rc
 sed -i "/user incidentd/d" /system/etc/init/incidentd.rc
 
+sed -i 's/ro.build.version.release/ro.build.version.huawei1/g' /system/lib64/vndk-27/libsoftkeymasterdevice.so
+
 # 8.0 vendor image specific hacks
 if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.release=8.0.0" ]; then
     # Fix logd service definition
