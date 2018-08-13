@@ -22,6 +22,11 @@ mount -o rw,remount /system
 sed -i "/genfscon exfat/d" /system/etc/selinux/plat_sepolicy.cil
 sed -i "/genfscon fuseblk/d" /system/etc/selinux/plat_sepolicy.cil
 
+# Remove unexisting groups from daemons
+sed -i "/group reserved_disk/d" /system/etc/init/vold.rc
+sed -i "s/group incidentd/group/" /system/etc/init/incidentd.rc
+sed -i "/user incidentd/d" /system/etc/init/incidentd.rc
+
 # 8.0 vendor image specific hacks
 if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.release=8.0.0" ]; then
     # Fix logd service definition
@@ -114,6 +119,9 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
 
     # Remove duplicated properties
     sed -i "/huawei.check.root./d" /system/etc/selinux/plat_property_contexts
+
+    # Use vndk 26
+    sed -i "s/27/26/" /system/etc/init/gsi/init.vndk-27.rc
 
     # Copy over vendor media_codecs.xml and disable unwanted HW codecs
     cp /vendor/etc/media_codecs.xml /system/etc/media_codecs.xml
