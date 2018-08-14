@@ -1,12 +1,12 @@
 # Display engine @ 1.0
 bin/displayengineserver:bin/displayengineserver@1.0|72dc892140456b1846ca845df1fee3b070cc0955
-lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_0.so|4b66a6c52f8233d83729196f438f2718ec854565
-lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_0.so|b9601b7342cad5a76073b23cd2430dd089a88e89
+lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_0.so|584965d9e79c1cd98b2208325c421504766e9271
+lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_0.so|ef94db62f8d97435d4636b6e57bd35fd03b3798b
 
 # Display engine @ 1.1
 bin/displayengineserver:bin/displayengineserver@1.1|5c5a704b6b3bc145001d22f108d2daf685ffbdda
-lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_1.so|3a9143552436dc0bc7dedca89141616ff4ebec77
-lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_1.so|0330a428a6a8259cf916ff724f6ac891388f8df7
+lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_1.so|27bf05cd5c68c33137f2982f09a6fe1690b744e9
+lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_1.so|69ce487c635a846de6b11e986616fb20eeb09049
 
 # Radio
 emui/base/global/ons.bin
