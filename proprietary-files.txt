@@ -337,6 +337,7 @@ lib/vndk-sp/libRSDriver.so:lib/vndk-sp-26/libRSDriver.so
 lib/vndk-sp/libRS_internal.so:lib/vndk-sp-26/libRS_internal.so
 lib/vndk-sp/libunwind.so:lib/vndk-sp-26/libunwind.so
 lib/vndk-sp/libutils.so:lib/vndk-sp-26/libutils.so
+lib/hw/android.hidl.memory@1.0-impl.so:lib/vndk-sp-26/hw/android.hidl.memory@1.0-impl.so
 lib64/vndk-sp/android.hardware.graphics.allocator@2.0.so:lib64/vndk-sp-26/android.hardware.graphics.allocator@2.0.so
 lib64/vndk-sp/android.hardware.graphics.common@1.0.so:lib64/vndk-sp-26/android.hardware.graphics.common@1.0.so
 lib64/vndk-sp/android.hardware.graphics.mapper@2.0.so:lib64/vndk-sp-26/android.hardware.graphics.mapper@2.0.so
@@ -364,6 +365,7 @@ lib64/vndk-sp/libRSDriver.so:lib64/vndk-sp-26/libRSDriver.so
 lib64/vndk-sp/libRS_internal.so:lib64/vndk-sp-26/libRS_internal.so
 lib64/vndk-sp/libunwind.so:lib64/vndk-sp-26/libunwind.so
 lib64/vndk-sp/libutils.so:lib64/vndk-sp-26/libutils.so
+lib64/hw/android.hidl.memory@1.0-impl.so:lib64/vndk-sp-26/hw/android.hidl.memory@1.0-impl.so
 
 # VNDK 27
 lib64/vndk-27/libeffectsconfig.so
@@ -373,4 +375,3 @@ lib64/vndk-27/libneuralnetworks.so
 
 # Wifi
 lib64/libwifi-system.so|7b990ee6f1aeb4d9446231b15fedcf7db277f88c
-
