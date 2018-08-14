@@ -75,9 +75,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Radio
 PRODUCT_PACKAGES += \
     qti-telephony-common
-
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+	
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril.config=huaweiSignalStrength
 	
 # Offline charging
 PRODUCT_PACKAGES += \
