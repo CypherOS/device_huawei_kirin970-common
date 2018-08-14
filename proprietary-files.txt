@@ -1,12 +1,24 @@
+# Display engine
+lib/libc_secshared.so
+lib64/libc_secshared.so
+
 # Display engine @ 1.0
 bin/displayengineserver:bin/displayengineserver@1.0|72dc892140456b1846ca845df1fee3b070cc0955
 lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_0.so|584965d9e79c1cd98b2208325c421504766e9271
+lib/vendor.huawei.hardware.graphics.displayeffect@1.0.so|933da472d3e3c0d53dc5b9668ac6689ae5a19b37
+lib/vendor.huawei.hardware.hwdisplay.displayengine@1.0.so|64d655b5351427dbe9fa7f16cea180ae696745f9
 lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_0.so|ef94db62f8d97435d4636b6e57bd35fd03b3798b
+lib64/vendor.huawei.hardware.graphics.displayeffect@1.0.so|eb115ca67953197e63edeb2d5683dc1f94f18be8
+lib64/vendor.huawei.hardware.hwdisplay.displayengine@1.0.so|893817048b225943d8e0f94388d54ff6a80ce8be
 
 # Display engine @ 1.1
 bin/displayengineserver:bin/displayengineserver@1.1|5c5a704b6b3bc145001d22f108d2daf685ffbdda
 lib/libdisplayengineservice.so:lib/libdisplayenginesvc_1_1.so|27bf05cd5c68c33137f2982f09a6fe1690b744e9
+lib/vendor.huawei.hardware.graphics.displayeffect@1.1.so|1255eb7cb516a6d5660ed39e76c1693c3fa84a85
+lib/vendor.huawei.hardware.hwdisplay.displayengine@1.1.so|0b93e37ec4ed22d82f717211ba4bf071b6d61aee
 lib64/libdisplayengineservice.so:lib64/libdisplayenginesvc_1_1.so|69ce487c635a846de6b11e986616fb20eeb09049
+lib64/vendor.huawei.hardware.graphics.displayeffect@1.1.so|a20541e86de00e4b0ed5a65e8cff27bab2e617b5
+lib64/vendor.huawei.hardware.hwdisplay.displayengine@1.1.so|4ab9d182e1b01600b89f0e817736d2ee9a089624
 
 # Radio
 emui/base/global/ons.bin
