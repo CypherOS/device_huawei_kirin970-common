@@ -72,13 +72,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
     ro.cust.cdrom=/dev/null
 
-# Radio
-PRODUCT_PACKAGES += \
-    qti-telephony-common
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril.config=huaweiSignalStrength
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
-	
 # Offline charging
 PRODUCT_PACKAGES += \
     charger_res_images
