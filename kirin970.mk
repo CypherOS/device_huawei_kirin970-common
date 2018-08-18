@@ -102,6 +102,10 @@ PRODUCT_PACKAGES += \
     libshims_hisupl \
     libshims_hwsmartdisplay_jni
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service.kirin970
+
 # VNDK
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/ld.config.26.txt:system/etc/ld.config.26.txt \
