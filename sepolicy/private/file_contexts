@@ -65,3 +65,7 @@
 
 # Splash2
 /splash2(/.*)?                                  u:object_r:splash2_data_file:s0
+
+# USB HAL
+/system/bin/hw/android\.hardware\.usb@1\.0-service\.kirin970       u:object_r:hal_usb_kirin970_exec:s0
+
