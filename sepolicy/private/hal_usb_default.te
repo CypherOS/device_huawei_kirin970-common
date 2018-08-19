@@ -1,0 +1,5 @@
+type hal_usb_default_exec, exec_type, file_type;
+
+typeattribute hal_usb_default system_executes_vendor_violators;
+
+init_daemon_domain(hal_usb_default)
