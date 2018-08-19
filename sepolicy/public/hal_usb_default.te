@@ -1,0 +1,2 @@
+type hal_usb_default, domain;
+hal_server_domain(hal_usb_default, hal_usb)
