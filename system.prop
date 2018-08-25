@@ -11,3 +11,6 @@ ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # Disable statsd
 ro.statsd.enable=false
+
+# Disable HW Overlays
+debug.sf.disable_hwcomposer=1
