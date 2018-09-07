@@ -9,6 +9,9 @@ ro.adb.secure=1
 # Perf
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
+# Signal strength
+ro.telephony.ril.huawei_signalstrength=true
+
 # Disable statsd
 ro.statsd.enable=false
 
