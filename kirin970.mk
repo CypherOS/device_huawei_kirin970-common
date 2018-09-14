@@ -26,6 +26,8 @@ PRODUCT_COPY_FILES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
+    init.bcm43xx.rc \
+    init.hisi.rc \
     init.kirin970.rc \
     init.kirin970.ab.rc \
     init.kirin970.environ.rc
@@ -112,3 +114,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/vndk-compat/llndk.libraries.26.txt:system/etc/llndk.libraries.26.txt \
     $(LOCAL_PATH)/vndk-compat/vndksp.libraries.26.txt:system/etc/vndksp.libraries.26.txt \
     $(LOCAL_PATH)/vndk-compat/ld.config.27.txt:system/etc/ld.config.27.txt
+
+# Wi-Fi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi.hostapd@1.0 \
+    android.hardware.wifi@1.2

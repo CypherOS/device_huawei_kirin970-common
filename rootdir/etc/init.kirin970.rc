@@ -1,3 +1,5 @@
+import /system/etc/init/connectivity/init.${ro.connectivity.chiptype}.rc
+
 on init
     mount none /system/bin/adbd /sbin/adbd bind
     mount none /system/etc/media_codecs.xml /vendor/etc/media_codecs.xml bind
@@ -7,6 +9,9 @@ on init
 on post-fs-data
     mkdir /data/vendor_ce 0771 root root
     mkdir /data/vendor_de 0771 root root
+    mkdir /data/vendor/wifi 0770 wifi wifi
+    mkdir /data/vendor/wifi/hostapd 0770 wifi wifi
+    mkdir /data/vendor/wifi/hostapd/sockets 0770 wifi wifi
 
 on property:sys.boot_completed=1
     write /sys/class/hw_power/charger/direct_charger/iin_thermal 4500
@@ -29,3 +34,9 @@ service dpeservice-1.1 /system/bin/displayengineserver@1.1
     user graphics
     group graphics system sdcard_rw
     disabled
+
+service wifi_ext /system/bin/hw/android.hardware.wifi@1.0-service
+    class hal
+    capabilities NET_ADMIN NET_RAW SYS_MODULE
+    user wifi
+    group wifi gps dhcp inet net_raw net_admin
