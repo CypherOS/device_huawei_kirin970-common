@@ -17,4 +17,4 @@ ro.telephony.needsMuteByRil=true
 ro.statsd.enable=false
 
 # Disable HW Overlays
-debug.sf.disable_hwcomposer=1
+debug.sf.disable_hwcomposer=true
