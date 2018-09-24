@@ -1,3 +1,6 @@
+on boot
+    setprop wifi.direct.interface p2p-dev-wlan0
+
 service hostapd /system/bin/hw/hostapd
     interface android.hardware.wifi.hostapd@1.0::IHostapd default
     class main
