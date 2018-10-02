@@ -18,4 +18,8 @@
     <!-- Is the device's fingerprint sensor located on the bottom front? Used
          for fingerprint enrollment illustration
     <bool name="config_hasBottomFingerprintSensor">true</bool>-->
+
+    <!-- When true allow properties overriden from vendor.
+         Props must be specified to work properly.	-->
+    <bool name="config_usesVendorPropertyOverrides">true</bool>
 </resources>
