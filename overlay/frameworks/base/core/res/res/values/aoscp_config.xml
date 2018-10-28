@@ -22,14 +22,11 @@
         <item>/sys/class/power_supply/Battery/scp_status</item>
     </string-array>
 
-    <!-- Whether the device requires overlays to be in /system/overlay
-    <bool name="config_hasSystemOverlayPath">true</bool>-->
-
     <!-- Full screen aspect ratio
     <bool name="config_haveHigherAspectRatioScreen">true</bool>-->
 
-    <!-- Determines whether the device supports fingerprint navigation
-    <bool name="config_supportsFPNavigation">true</bool>-->
+    <!-- Determines whether the device supports fingerprint navigation -->
+    <bool name="config_supportsFingerprintNavigation">true</bool>
 
     <!-- Key codes of fingerprint gestures. If the gesture is not supported set it to 0.
     <integer name="config_fpSingleTapKeyCode">174</integer>
@@ -60,10 +57,5 @@
 
     <!-- Does the battery LED support multiple colors? Used to decide if the user can change the colors
     <bool name="config_multiColorBatteryLed">true</bool>-->
-
-	<!-- Descriptor: Path to the vendors biometrics hal, required to send commands.
-         TransactionId: The transaction id required to send to the biometrics hal.
-    <string name="config_vendorBiometricsDescriptor" translatable="false">vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint</string>
-    <integer name="config_vendorBiometricsTransactionId">20</integer>-->
 
 </resources>

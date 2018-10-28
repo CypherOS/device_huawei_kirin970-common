@@ -17,3 +17,6 @@ ro.statsd.enable=false
 
 # Disable HW Overlays
 debug.sf.disable_hwcomposer=true
+
+# Disable fp nav by default
+sys.fpnav.enabled=0
