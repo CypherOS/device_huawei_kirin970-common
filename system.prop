@@ -10,6 +10,7 @@ ro.adb.secure=1
 ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # RIL
+ro.telephony.default_network=9,9
 ro.telephony.ril.hisi=true
 
 # Disable statsd
