@@ -42,13 +42,10 @@ import co.aoscp.hwcontrollers.util.FileUtils;
 
 public class DisplayEngineController {
 
-    private static final String DISPLAY_MODE_NORMAL = "Normal";
-    private static final String DISPLAY_MODE_VIVID  = "Vivid";
-
     private static final String DEFAULT_PATH = "/data/misc/.displaymodedefault";
     private static final int[] DISPLAY_MODES = {
-        0, //DISPLAY_MODE_NORMAL
-        1, //DISPLAY_MODE_VIVID
+        0, // Normal
+        1, // Vivid
     };
 
     private static final String DISPLAY_ENGINE_V1_0_PROP = "init.svc.displayengine-hal-1-0";
@@ -148,15 +145,6 @@ public class DisplayEngineController {
     }
 
     public static String getModeName(int mode) {
-        if (sDisplayEngineService == null) {
-            return null;
-        }
-        String modeName = null;
-        if (mode == 0) {
-            modeName = DISPLAY_MODE_NORMAL;
-        } else if (mode == 1) {
-            modeName = DISPLAY_MODE_VIVID;
-        }
-        return modeName;
+        return null;
     }
 }

@@ -22,4 +22,8 @@
     <!-- When true allow properties overriden from vendor.
          Props must be specified to work properly.	-->
     <bool name="config_usesVendorPropertyOverrides">true</bool>
+
+    <!-- Display modes -->
+    <string name="display_mode_option_default">Normal</string>
+    <string name="display_mode_option_1">Vivid</string>
 </resources>
