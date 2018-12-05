@@ -6,6 +6,9 @@ on init
     mount none /system/etc/usb_audio_policy_configuration.xml /vendor/etc/usb_audio_policy_configuration.xml bind
     mount none /system/usr/keylayout/fingerprint.kl /vendor/usr/keylayout/fingerprint.kl bind
 
+on fs
+    mount ext4 /dev/block/by-name/product_a /product wait ro
+
 on post-fs-data
     mkdir /data/vendor_ce 0771 root root
     mkdir /data/vendor_de 0771 root root
