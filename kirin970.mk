@@ -20,6 +20,9 @@ $(call inherit-product-if-exists, vendor/huawei/kirin970-common/kirin970-common-
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
+# Properties
+-include $(LOCAL_PATH)/system_prop.mk
+
 # Audio
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:system/etc/usb_audio_policy_configuration.xml
@@ -72,7 +75,6 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.version.huawei1=8.1.0 \
     ro.build.version.release=$(PLATFORM_VERSION) \
     ro.build.version.sdk=$(PLATFORM_SDK_VERSION) \
-    ro.cust.cdrom=/dev/null \
     ro.vendor.override.security_patch=$(PLATFORM_SECURITY_PATCH) \
     ro.vendor.override.build_display=$(BUILD_ID) \
     init.svc.displayengine-hal-1-0=1
