@@ -103,7 +103,7 @@ public class DisplayEngineController {
         if (sDisplayEngineService == null) {
             return -1;
         }
-        return DISPLAY_MODES[sColorEnhancementCurrentMode];;
+        return DISPLAY_MODES[sColorEnhancementCurrentMode];
     }
 
     /*

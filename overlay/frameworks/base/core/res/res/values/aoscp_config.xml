@@ -25,14 +25,6 @@
     <!-- Full screen aspect ratio
     <bool name="config_haveHigherAspectRatioScreen">true</bool>-->
 
-    <!-- Determines whether the device supports fingerprint navigation -->
-    <bool name="config_supportsFingerprintNavigation">true</bool>
-
-    <!-- Descriptor: Path to the vendors biometrics hal, required to send commands.
-         TransactionId: The transaction id required to send to the biometrics hal. -->
-    <string name="config_BiometricTransactorDescriptor" translatable="false">vendor.huawei.hardware.biometrics.fingerprint@2.1::IExtBiometricsFingerprint</string>
-    <integer name="config_BiometricTransactorTransactionId">20</integer>
-
     <!-- Key codes of fingerprint gestures. If the gesture is not supported set it to 0.
     <integer name="config_fpSingleTapKeyCode">174</integer>
     <integer name="config_fpSwipeLeftKeyCode">105</integer>
