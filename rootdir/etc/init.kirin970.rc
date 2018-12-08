@@ -23,21 +23,6 @@ on property:ro.aoscp.device=*
 on property:sys.usb.ffs.mtp.ready=0
     setprop sys.usb.ffs.mtp.ready 1
 
-service dpeservice-1.0 /system/bin/displayengineserver@1.0
-    class main
-    user graphics
-    group graphics system sdcard_rw
-    disabled
-
-service dpeservice-1.1 /system/bin/displayengineserver@1.1
-    class main
-    user graphics
-    group graphics system sdcard_rw
-    disabled
-
-on property:init.svc.displayengine-hal-1-0=*
-    start dpeservice-1.0
-
 service wifi_ext /system/bin/hw/android.hardware.wifi@1.0-service
     class hal
     capabilities NET_ADMIN NET_RAW SYS_MODULE

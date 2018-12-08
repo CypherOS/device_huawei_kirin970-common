@@ -18,12 +18,10 @@
 package co.aoscp.hwcontrollers;
 
 import android.content.Context;
-import android.os.SystemProperties;
 import android.util.Log;
 
 import com.android.server.HwSmartDisplayService;
 import com.android.server.display.DisplayEngineService;
-import com.android.server.display.DisplayEngineService_V1_0;
 import com.android.server.display.DisplayEngineService_V1_1;
 
 import co.aoscp.hwcontrollers.util.FileUtils;
@@ -48,15 +46,12 @@ public class DisplayEngineController {
         1, // Vivid
     };
 
-    private static final String DISPLAY_ENGINE_V1_0_PROP = "init.svc.displayengine-hal-1-0";
-    private static final String DISPLAY_ENGINE_V1_1_PROP = "init.svc.displayengine-hal-1-1";
-
     private static DisplayEngineService sDisplayEngineService;
     private static int sColorEnhancementCurrentMode = 0;
 
     static {
         try {
-            sDisplayEngineService = new DisplayEngineService_V1_0();
+            sDisplayEngineService = new DisplayEngineService_V1_1();
 
             sDisplayEngineService.setBootComplete(true);
             sDisplayEngineService.enablePowerMode(true);
