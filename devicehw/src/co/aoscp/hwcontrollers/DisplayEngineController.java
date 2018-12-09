@@ -46,12 +46,19 @@ public class DisplayEngineController {
         1, // Vivid
     };
 
+	private static final int SMARTDISPLAY_EYE_COMFORT = 1;
+	private static final int SMARTDISPLAY_COLOR_ENHANCEMENT = 2;
+
     private static DisplayEngineService sDisplayEngineService;
     private static int sColorEnhancementCurrentMode = 0;
+	public static HwSmartDisplayService sHwSmartDisplayService;
 
     static {
         try {
             sDisplayEngineService = new DisplayEngineService_V1_1();
+
+			sHwSmartDisplayService = new HwSmartDisplayService();
+            sHwSmartDisplayService.init_native();
 
             sDisplayEngineService.setBootComplete(true);
             sDisplayEngineService.enablePowerMode(true);
@@ -114,8 +121,10 @@ public class DisplayEngineController {
         sColorEnhancementCurrentMode = mode;
         if (sColorEnhancementCurrentMode == 0) {
             sDisplayEngineService.enableColorMode(false);
+			sHwSmartDisplayService.nativeSetSmartDisplay(SMARTDISPLAY_EYE_COMFORT, 0);
         } else if (sColorEnhancementCurrentMode == 1) {
             sDisplayEngineService.enableColorMode(true);
+			sHwSmartDisplayService.nativeSetSmartDisplay(SMARTDISPLAY_COLOR_ENHANCEMENT, 1);
         }
         if (makeDefault) {
             FileUtils.writeLine(DEFAULT_PATH, String.valueOf(sColorEnhancementCurrentMode));
