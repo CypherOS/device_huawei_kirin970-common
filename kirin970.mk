@@ -18,8 +18,7 @@ $(call inherit-product, vendor/huawei/kirin970-common/kirin970-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
@@ -31,10 +30,6 @@ PRODUCT_COPY_FILES += \
 # bfm
 PRODUCT_PACKAGES += \
     bfm-ctl
-
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
 
 # Device init scripts
 PRODUCT_PACKAGES += \
