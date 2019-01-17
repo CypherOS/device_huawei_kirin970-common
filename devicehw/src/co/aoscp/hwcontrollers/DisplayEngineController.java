@@ -110,7 +110,7 @@ public class DisplayEngineController {
         if (sDisplayEngineService == null) {
             return false;
         }
-        sColorEnhancementCurrentMode = mode.id;
+        sColorEnhancementCurrentMode = mode;
         if (sColorEnhancementCurrentMode == 0) {
             sDisplayEngineService.enableColorMode(false);
         } else if (sColorEnhancementCurrentMode == 1) {
