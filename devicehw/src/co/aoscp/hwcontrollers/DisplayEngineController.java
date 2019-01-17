@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018 CypherOS
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,13 +15,12 @@
  * limitations under the License.
  */
 
-package org.lineageos.hardware;
+package co.aoscp.hwcontrollers;
 
 import com.android.server.display.DisplayEngineService;
 import com.android.server.display.DisplayEngineService_V1_1;
 
-import lineageos.hardware.DisplayMode;
-import org.lineageos.internal.util.FileUtils;
+import co.aoscp.hwcontrollers.util.FileUtils;
 
 /*
  * Display Modes API
@@ -34,11 +34,12 @@ import org.lineageos.internal.util.FileUtils;
  * modes supported by the hardware.
  */
 
-public class DisplayModeControl {
+public class DisplayEngineController {
+
     private static final String DEFAULT_PATH = "/data/misc/.displaymodedefault";
-    private static final DisplayMode[] DISPLAY_MODES = {
-        new DisplayMode(0, "Normal"),
-        new DisplayMode(1, "Vivid"),
+    private static final int[] DISPLAY_MODES = {
+        0, // Normal
+        1, // Vivid
     };
 
     private static DisplayEngineService sDisplayEngineService;
@@ -81,9 +82,9 @@ public class DisplayModeControl {
      * It is the responsibility of the upper layers to
      * map the name to a human-readable format or perform translation.
      */
-    public static DisplayMode[] getAvailableModes() {
+    public static int[] getAvailableModes() {
         if (sDisplayEngineService == null) {
-            return new DisplayMode[0];
+            return new int[0];
         }
         return DISPLAY_MODES;
     }
@@ -92,9 +93,9 @@ public class DisplayModeControl {
      * Get the name of the currently selected mode. This can return
      * null if no mode is selected.
      */
-    public static DisplayMode getCurrentMode() {
+    public static int getCurrentMode() {
         if (sDisplayEngineService == null) {
-            return null;
+            return -1;
         }
         return DISPLAY_MODES[sColorEnhancementCurrentMode];
     }
@@ -105,7 +106,7 @@ public class DisplayModeControl {
      * failure. It is up to the implementation to determine
      * if this mode is valid.
      */
-    public static boolean setMode(DisplayMode mode, boolean makeDefault) {
+    public static boolean setMode(int mode, boolean makeDefault) {
         if (sDisplayEngineService == null) {
             return false;
         }
@@ -125,15 +126,19 @@ public class DisplayModeControl {
      * Gets the preferred default mode for this device by it's
      * string identifier. Can return null if there is no default.
      */
-    public static DisplayMode getDefaultMode() {
+    public static int getDefaultMode() {
         if (sDisplayEngineService == null) {
-            return null;
+            return -1;
         }
         try {
             int mode = Integer.parseInt(FileUtils.readOneLine(DEFAULT_PATH));
             return DISPLAY_MODES[mode];
         } catch (NumberFormatException | ArrayIndexOutOfBoundsException e) {
-            return null;
+            return -1;
         }
+    }
+
+	public static String getModeName(int mode) {
+        return null;
     }
 }

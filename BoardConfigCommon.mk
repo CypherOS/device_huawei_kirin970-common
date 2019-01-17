@@ -72,7 +72,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_kirin970
 
 # Lineage hardware
 JAVA_SOURCE_OVERLAYS := \
-    org.lineageos.hardware|$(VENDOR_PATH)/lineagehw|**/*.java
+    hardware.aoscp.controllers|$(VENDOR_PATH)/devicehw|**/*.java
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
