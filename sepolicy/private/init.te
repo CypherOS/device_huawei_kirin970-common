@@ -20,3 +20,7 @@ allow init vendor_configs_file:dir mounton;
 
 # Allow init to load kernel modules
 allow init kernel:system module_request;
+
+allow hwsched system_data_file:lnk_file read;
+
+allow init sysfs_led:file setattr;

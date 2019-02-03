@@ -1,1 +1,2 @@
 type display_engine_service, service_manager_type;
+type untrusted_app_visible_hisi_hwservice, service_manager_type;

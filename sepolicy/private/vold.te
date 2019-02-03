@@ -7,3 +7,9 @@ allow vold {
 
 # Allow vold to list files in mnt_modem_file
 allow vold mnt_modem_file:dir search;
+
+# Allow vold to write to sdd system block
+allow vold sys_block_sdd:file write;
+
+# Allow vold to write inside zram file system
+allow vold sysfs_zram:file write;

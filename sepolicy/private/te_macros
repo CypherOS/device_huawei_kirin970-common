@@ -1,0 +1,4 @@
+#####################################
+# Common groupings of permissions.
+#
+define(`link_file_perms', `{ getattr link unlink rename }')
