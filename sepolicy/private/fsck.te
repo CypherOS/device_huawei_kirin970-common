@@ -1,0 +1,5 @@
+allow fsck block_device:blk_file { rw_file_perms };
+allow fsck hisee_blkdev:blk_file { rw_file_perms };
+allow fsck mke2fs_blkdev:blk_file { rw_file_perms };
+allow fsck modem_log_file:dir getattr;
+allow fsck modem_fw_file:dir getattr;

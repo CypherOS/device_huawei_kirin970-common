@@ -20,3 +20,15 @@ allow displayengineserver displayengine_hwservice:hwservice_manager find;
 
 # Allow displayengineserver to find surfaceflinger_service
 allow displayengineserver surfaceflinger_service:service_manager find;
+
+# Allow displayengineserver to find 3rd party apps hwservice
+allow displayengineserver untrusted_app_visible_hisi_hwservice:hwservice_manager find;
+
+# Allow displayengineserver to read inside /data/cust
+allow displayengineserver cust_data_file:lnk_file read;
+
+# Allow displayengineserver to call binder displayeffect
+binder_call(displayengineserver, displayeffect)
+
+# Allow displayengineserver to call binder hal_displayengine_default
+binder_call(displayengineserver, hal_displayengine_default)

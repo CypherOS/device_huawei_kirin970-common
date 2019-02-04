@@ -1,0 +1,3 @@
+allow radio odm_xml_file:dir rw_dir_perms;
+allow radio odm_xml_file:file rw_file_perms;
+

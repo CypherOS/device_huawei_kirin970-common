@@ -1,0 +1,9 @@
+type hwemerffu_service, domain;
+type hwemerffu_service_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hwemerffu_service);
+
+# Allow hwemerffu_service to search for a file inside /data/vendor/fw
+allow hwemerffu_service hwemerffu_file:dir search;
+
+allow hwemerffu_service self:capability dac_override;

@@ -1,0 +1,9 @@
+type hinetmanager, domain;
+type hinetmanager_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(hinetmanager);
+
+# Allow hinetmanager to have rw, create and link perms inside /data/vendor/hinetmanager
+allow hinetmanager hinetmanager_data_vendor_file:file { create_file_perms link_file_perms rw_file_perms };
+
+allow hinetmanager self:capability dac_override;
