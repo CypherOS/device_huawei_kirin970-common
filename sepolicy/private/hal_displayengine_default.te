@@ -1,3 +1,0 @@
-type hal_displayengine_default, domain;
-
-allow hal_displayengine_default sysfs:file { open read };

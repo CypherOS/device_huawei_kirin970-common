@@ -105,9 +105,11 @@ BOARD_ROOT_EXTRA_FOLDERS := \
     splash2 \
     version
 
-# SELinux
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
+ifneq ($(TARGET_DEVICE),charlotte)
+ # SELinux
+ BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
+ BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
+endif
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
