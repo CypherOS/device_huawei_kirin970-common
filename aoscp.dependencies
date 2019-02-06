@@ -4,4 +4,9 @@
     "target_path": "vendor/huawei",
     "remote":      "aoscp"
   }
+  {
+    "repository":  "kernel_huawei_kirin970",
+    "target_path": "kernel/huawei/kirin970",
+    "remote":      "aoscp"
+  }
 ]
