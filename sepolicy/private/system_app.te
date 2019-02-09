@@ -1,0 +1,2 @@
+# Allow system apps to know that we use hw keys navigation
+allow system_app fs_bpf:dir r_dir_perms;
