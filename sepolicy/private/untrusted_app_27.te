@@ -1,0 +1,2 @@
+# Allow 3rd party apps to know that we have hidden the navbar
+allow untrusted_app_27 serialno_prop:file { r_dir_perms r_file_perms };
