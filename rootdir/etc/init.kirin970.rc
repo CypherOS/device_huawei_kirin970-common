@@ -16,7 +16,7 @@ on fs
 on post-fs-data
     start teecd
 
-on property:ro.lineage.device=*
+on property:ro.aoscp.device=*
     setprop qemu.hw.mainkeys 1
 
 on property:sys.user.0.ce_available=true
