@@ -43,6 +43,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/fingerprint.kl:system/usr/keylayout/fingerprint.kl
 
+# DeviceHw
+PRODUCT_PACKAGES += \
+    aoscp.touch@1.0-service.kirin970
+
 # NFC
 PRODUCT_PACKAGES += \
     NfcNci \
