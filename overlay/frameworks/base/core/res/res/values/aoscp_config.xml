@@ -20,4 +20,7 @@
         <item>/sys/class/power_supply/Battery/scp_status</item>
     </string-array>
 
+    <!-- Does the battery LED support multiple colors?
+         Used to decide if the user can change the colors -->
+    <bool name="config_multiColorBatteryLed">true</bool>
 </resources>
