@@ -26,3 +26,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # USB
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.cust.cdrom=/dev/null
+
+# Storaged
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.storaged.event.interval=999999
