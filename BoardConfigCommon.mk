@@ -100,8 +100,3 @@ ifneq ($(TARGET_DEVICE),charlotte)
  BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/private
  BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(VENDOR_PATH)/sepolicy/public
 endif
-
-# Shims
-TARGET_LD_SHIM_LIBS := \
-    /system/lib64/libdisplayengineservice.so|libshims_hwsmartdisplay_jni.so \
-    /system/lib64/libhwsmartdisplay_jni.so|libshims_hwsmartdisplay_jni.so
