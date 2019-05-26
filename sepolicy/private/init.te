@@ -20,3 +20,6 @@ allow init vendor_configs_file:dir mounton;
 
 # Allow init to load kernel modules
 allow init kernel:system module_request;
+
+# allow creating /sdcard symlink
+allow init tmpfs:lnk_file create;
