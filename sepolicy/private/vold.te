@@ -7,3 +7,6 @@ allow vold {
 
 # Allow vold to list files in mnt_modem_file
 allow vold mnt_modem_file:dir search;
+
+# Allow vold to read boot logo
+allow vold splash2_data_file:dir read;
