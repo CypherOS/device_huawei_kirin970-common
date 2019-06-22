@@ -40,3 +40,7 @@ service charger /sbin/chargeonlymode -p
     group root system
     critical
     seclabel u:r:charger:s0
+
+on property:sys.boot_completed=1
+    stop logd
+    write /dev/kmsg "Boot completed"
