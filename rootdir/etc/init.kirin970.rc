@@ -22,6 +22,7 @@ on post-fs-data
 
 on property:ro.aoscp.device=*
     setprop qemu.hw.mainkeys 1
+    setprop sys.fpnav.enabled 1
 
 on property:sys.user.0.ce_available=true
     mkdir /data/sec_storage_data 0700 system system
